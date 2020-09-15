@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tweets</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="behavior.js"></script>
+</head>
+<body >
+  <header>
+    <div class="nav-container">
+      <nav>
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="burger-menu">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="left-menu">
+          <li>
+            <a href="page.html">Home</a>
+          </li>
+          <li>
+            <a href="derric_cv.pdf" target="_blank">Resume</a>
+          </li>
+          <li>
+            <a href="mailto:derric.donehoo@gmail.com">Contact</a>
+          </li>
+        </ul>
+        <a href="https://derric-d.github.io/profile/" class="logo" alt="Portfolio link" target="_blank">Tweets</a>
+        <div class="right-menu">
+          <!-- <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div> -->
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </nav>
+    </nav>
+  </div>
+</header>
+<main>
+  <article id="tweet-container">
+    <div class="container">
+      <ul>
+        <li>
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="https://t.co/i30r5jgtsr">https://t.co/i30r5jgtsr</a></p>&mdash; Boston Dynamics (@BostonDynamics) <a href="https://twitter.com/BostonDynamics/status/1113158658291060736?ref_src=twsrc%5Etfw">April 2, 2019</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        </li>
+        <li>
+          <span id="robogif">
+            <iframe src="https://giphy.com/embed/5huaSkC1OvHDQ8Eb2V" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/robot-uprising-5huaSkC1OvHDQ8Eb2V">via GIPHY</a></p>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+  </article>
+  <aside>
+    <div id="disqus_thread"></div>
+    <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+      var disqus_config = function () {
+      this.page.url = '{{content.absolute_url}}';  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = '{{content_id}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://derricstest.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </aside>
+</main>
+<footer>
+  <div class="footer-content">
+    <ul>
+      <li>
+        Made by <a href="https://twitter.com/@Derric25691930" target="_blank">Derric Donehoo</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

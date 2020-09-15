@@ -1,0 +1,136 @@
+<!-- @dalarcon I've played with the viewport and relative width a bit earlier, but it seems unnecessary. Could you please tell me what exactly about how this site responds on mobile is messy? Then i can maybe target a solution. otherwise it seems fine to me. Anything else I would rather just have a mobile version and a web version rather than sacrifice layout and design decisions. But with everyone saying  this isnt mobile responsive, id like to hear how.
+ --><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <script type="text/javascript" src="behavior.js"></script>
+  <title>Biography</title>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <nav>
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="burger-menu">
+
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="left-menu">
+          <li>
+            <a href="derric_cv.pdf" target="_blank">Resume</a>
+          </li>
+          <li>
+            <a href="tweets.html">Tweets</a>
+          </li>
+          <li>
+            <a href="mailto:derric.donehoo@gmail.com">Contact</a>
+          </li>
+        </ul>
+        <a href="https://derric-d.github.io/profile/" class="logo" alt="Portfolio link" target="_blank">Home</a>
+        <div class="right-menu">
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article>
+
+      <div class="card-product" id="biocard">
+        <img src="profpic.jpg" alt="profile picture">
+        <div class="card-product-infos">
+          <h2>Hi, I'm Derric</h2>
+          <p class="summary">Born in Oregon USA, moved to Germany at 19. After studying I have found a passion and talent for coding, and I am now ready to join an ambitious tech organization. <br>I am sure that I will add value to any team through my ability to learn quickly and solve problems efficiently.<br> I look forward to seeing myself grow to be the best programmer I can be in an encouraging and engaging workplace. </p>
+        </div>
+      </div>
+
+      <!-- skills table -->
+
+      <div id="skills-tab">
+        <span> <h3 id="skillhead"><b>Skills</b></h3></span>
+        <table class="tg">
+          <tbody><tr>
+            <th class="tg-0lax"><span style="font-weight:bold">Backend</span></th>
+            <th class="tg-0lax"><span style="font-weight:bold">Frontend</span></th>
+            <th class="tg-0lax"><span style="font-weight:bold">Source Control</span></th>
+            <th class="tg-0lax"><span style="font-weight:bold">Frameworks</span></th>
+            <th class="tg-0lax"><span style="font-weight:bold">UI/UX</span></th>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Ruby(advanced)</td>
+            <td class="tg-0lax">JavaScript ES6<br></td>
+            <td class="tg-0lax">Git/Git flow</td>
+            <td class="tg-0lax">React/Redux</td>
+            <td class="tg-0lax">Atomic Design</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Python(intermediate)</td>
+            <td class="tg-0lax">CSS/SASS/LESS</td>
+            <td class="tg-0lax">Agile</td>
+            <td class="tg-0lax">Grails(basic)</td>
+            <td class="tg-0lax">Prototyping</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Java (basic)</td>
+            <td class="tg-0lax">HTML/XHTML/HAML</td>
+            <td class="tg-0lax">SCRUM/KANBAN</td>
+            <td class="tg-0lax">AngularJS</td>
+            <td class="tg-0lax">Adobe Suite</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Restful API</td>
+            <td class="tg-0lax">WebPack</td>
+            <td class="tg-0lax">Github/Bitbucket<br></td>
+            <td class="tg-0lax">Bootstrap</td>
+            <td class="tg-0lax">User Stories</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">PostgreSQL</td>
+            <td class="tg-0lax">508 Accessibility<br></td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax">Ruby on Rails</td>
+            <td class="tg-0lax">Wireframing/UML</td>
+          </tr>
+        </tbody></table>
+      </div>
+
+    </article>
+    <aside>
+      <div id="disqus_thread"></div>
+      <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+      var disqus_config = function () {
+      this.page.url = '{{content.absolute_url}}';  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = '{{content_id}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://derricstest.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </aside>
+</main>
+<footer>
+  <div class="footer-content">
+    <ul>
+      <li>
+        Made by <a href="https://twitter.com/@Derric25691930" target="_blank">Derric Donehoo</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+<script id="dsq-count-scr" src="//derricstest.disqus.com/count.js" async></script>
+
+
+</body>
+</html>
